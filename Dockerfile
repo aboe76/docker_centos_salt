@@ -5,7 +5,7 @@
 FROM centos
 
 # bootstrap salt
-RUN curl -L http://bootstrap.saltstack.org | sh
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- -M
 
 # Add gitpython
 RUN yum install -y GitPython
