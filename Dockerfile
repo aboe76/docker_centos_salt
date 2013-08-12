@@ -5,13 +5,13 @@
 FROM centos
 
 # bootstrap salt
-RUN curl -L http://bootstrap.saltstack.org | sh
+RUN curl -L http://bootstrap.saltstack.org | sh -s -- -M
 
 # Add gitpython
-RUN install -y GitPython
+RUN yum install -y GitPython
 
 # Add gitfs support
-ADD .salt-gitfs.conf /etc/salt/master.d/
+ADD salt-gitfs.conf /etc/salt/master.d/
 
 # /srv/salt
 ADD srv/salt /srv/salt

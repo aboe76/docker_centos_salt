@@ -1,7 +1,8 @@
-docker_centos_salt
-==================
+docker container centos salt-minion
+===================================
 
-Docker centos container with salt-minion and saltstack-formulas repo
+This is Docker centos container with salt-minion  
+and saltstack-formulas repo under gitfs
 
-To test this:
-gitfs saltstack-formulas git and nano are added
+For more saltstack-formulas:
+https://github.com/saltstack-formulas
