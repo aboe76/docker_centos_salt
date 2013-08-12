@@ -8,7 +8,7 @@ FROM centos
 RUN curl -L http://bootstrap.saltstack.org | sh
 
 # Add gitpython
-RUN install -y GitPython
+RUN yum install -y GitPython
 
 # Add gitfs support
 ADD .salt-gitfs.conf /etc/salt/master.d/
