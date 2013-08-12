@@ -11,7 +11,7 @@ RUN curl -L http://bootstrap.saltstack.org | sh
 RUN yum install -y GitPython
 
 # Add gitfs support
-ADD .salt-gitfs.conf /etc/salt/master.d/
+ADD salt-gitfs.conf /etc/salt/master.d/
 
 # /srv/salt
 ADD srv/salt /srv/salt
